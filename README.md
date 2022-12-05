@@ -7,7 +7,7 @@ Para empezar se debe levantar la BD con el siguiente comando **json-server --wat
 ![](https://raw.githubusercontent.com/sgcm14/heroes-app/main/doc/db-json.png)
 > Pantalla de **BD Json-server**
 
-Al hacer click en **Ingresar** te lleva a la pantalla del listado de héroes
+Al hacer click en **Ingresar** te lleva a la pantalla del listado de héroes, en donde te muestra la sesión del usuario logueada, si le das en logout, por mas que ingreses a la ruta de listado, no te la mostrará y te redirigirá a login.
 ![](https://raw.githubusercontent.com/sgcm14/heroes-app/main/doc/imagen01.png)
 > Pantalla de **Login**
 
