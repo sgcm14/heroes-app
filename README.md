@@ -4,6 +4,7 @@ Heroes Apps
 > En este proyecto se usó Angular
 
 Para empezar se debe levantar la BD con el siguiente comando **json-server --watch db.json** en la terminal se visualiza asi:
+
 ![](https://raw.githubusercontent.com/sgcm14/heroes-app/main/doc/db-json.png)
 > Pantalla de **BD Json-server**
 
