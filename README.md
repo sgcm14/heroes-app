@@ -3,14 +3,21 @@ Heroes Apps
 - Este proyecto se realizó siguiendo el curso [Angular: De cero a experto](https://www.udemy.com/course/angular-fernando-herrera/# "Angular: De cero a experto") 
 > En este proyecto se usó Angular
 
-Para empezar se debe levantar la BD con el siguiente comando **json-server --watch db.json** en la terminal se visualiza asi:
+Para empezar se debe levantar la BD con el siguiente comando **json-server --watch db.json** ó ejecutando ```npm run backend``` la terminal se visualiza asi:
 
 ![](https://raw.githubusercontent.com/sgcm14/heroes-app/main/doc/db-json.png)
 > Pantalla de **BD Json-server**
 
-Al hacer click en **Ingresar** te lleva a la pantalla del listado de héroes, en donde te muestra la sesión del usuario logueada, si le das en logout, por mas que ingreses a la ruta de listado, no te la mostrará y te redirigirá a login.
+Para poder ingresar se deben ingresar las siguientes credenciales:
+**email:** john.due@gmail.com
+**password:** user123
+
+ al darle click en **Ingresar** te lleva a la pantalla del listado de héroes, en donde te muestra la sesión del usuario logueada, si le das en logout, por mas que ingreses a la ruta de listado, no te la mostrará y te redirigirá a **login**. Si ya estas logueado e intentas navegar a la ruta de **login** o **registro**, tampoco se te mostrará porque hay un guard implementado para cada caso.
 ![](https://raw.githubusercontent.com/sgcm14/heroes-app/main/doc/imagen01.png)
 > Pantalla de **Login**
+
+![](https://raw.githubusercontent.com/sgcm14/heroes-app/main/doc/imagen01-2.png)
+> Pantalla de **Registro**
 
 En esta pantalla se lista todos los héroes de la BD como se muestra a continuación:
 ![](https://raw.githubusercontent.com/sgcm14/heroes-app/main/doc/imagen02.png)
