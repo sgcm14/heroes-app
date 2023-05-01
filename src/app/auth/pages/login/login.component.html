@@ -1,7 +1,21 @@
-<mat-grid-list cols="1">
-  <mat-grid-tile>
-    <button mat-raised-button color="primary" (click)="login()">
-      Ingresar
-    </button>
-  </mat-grid-tile>
-</mat-grid-list>
+<form class="flex flex-column" [formGroup]="miFormulario" (ngSubmit)="login()">
+  <span class="text-lg mb-4">Login</span>
+  <mat-form-field>
+    <mat-label>Usuario</mat-label>
+    <input type="text" matInput placeholder="Nombre de Usuario" formControlName="email" />
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Contraseña</mat-label>
+    <input type="password" matInput placeholder="Contaseña" formControlName="password" />
+  </mat-form-field>
+
+  <button mat-button mat-flat-button color="primary" [disabled]="miFormulario.invalid">
+    <mat-icon>save</mat-icon>
+    Ingresar
+  </button>
+
+  <div class="flex justify-content-end mt-5">
+    <a routerLink="/auth/registro">¿No tienes cuenta?</a>
+  </div>
+</form>

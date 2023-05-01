@@ -11,15 +11,21 @@
     <p>
       <strong>Primera aparición </strong> {{heroe.first_appearance}}
       <br>
-      <strong>Personajes: </strong> {{heroe.characters}}
+      <mat-chip-list>
+        <mat-chip *ngFor="let item of heroe.characters.split(',') | slice:0:3">
+          {{item}}
+        </mat-chip>
+      </mat-chip-list>
     </p>
   </mat-card-content>
 
   <mat-card-actions>
     <button mat-button color="warn" [routerLink]="['/heroes',heroe.id]">
+      <mat-icon>more_horiz</mat-icon>
       Leer mas...
     </button>
     <button mat-button color="info" [routerLink]="['/heroes/editar',heroe.id]">
+      <mat-icon>edit</mat-icon>
       Editar
     </button>
   </mat-card-actions>

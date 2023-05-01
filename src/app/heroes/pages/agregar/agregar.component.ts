@@ -58,7 +58,9 @@ export class AgregarComponent implements OnInit {
       .pipe(
         switchMap(({ id }) => this.heroesService.getHeroePorId(id))
       ).subscribe((heroe) => {
+        if(!heroe) return this.router.navigate(['/heroes/listado']);
         this.heroe = heroe;
+        return;
       });
   }
 

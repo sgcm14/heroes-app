@@ -13,6 +13,12 @@ import { AuthService } from 'src/app/auth/services/auth.service';
 })
 export class HomeComponent implements OnInit {
 
+  public sidebarItems = [
+    { label: 'Listado de Héroes', icon: 'label', url: './listado' },
+    { label: 'Añadir Héroe', icon: 'add', url: './agregar' },
+    { label: 'Buscar Héroe', icon: 'search', url: './buscar' },
+  ]
+
   get auth() {
     return this.authService.auth;
   }
